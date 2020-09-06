@@ -26,7 +26,7 @@ class App extends React.Component {
       },
       favouriteLocations: JSON.parse(
         localStorage.getItem('favouriteLocations')
-      ),
+      ) || [],
     }
   }
 

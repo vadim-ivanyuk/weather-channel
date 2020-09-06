@@ -90,7 +90,7 @@ class MainWeather extends React.Component {
     const { cityName } = this.props.values
     let activeOrPassive = 'passive'
 
-    if (favouriteLocations.length > 0) {
+    if (favouriteLocations.length !== null && favouriteLocations.length > 0) {
       favouriteLocations.map((item) => {
         if (item === cityName) {
           activeOrPassive = 'active'
@@ -110,7 +110,7 @@ class MainWeather extends React.Component {
     const { cityName } = this.props.values
     let proverka = false
 
-    if (favouriteLocations.length > 0) {
+    if (favouriteLocations.length !== null && favouriteLocations.length > 0) {
       favouriteLocations.map((item) => {
         if (item === cityName) {
           proverka = true

@@ -101,7 +101,7 @@ class App extends React.Component {
     const { lat, lon } = this.state.coord
 
     return fetch(
-      `http://api.timezonedb.com/v2.1/get-time-zone?key=${time_zone_api}&format=json&by=position&lat=${lat}&lng=${lon}`
+      `https://api.timezonedb.com/v2.1/get-time-zone?key=${time_zone_api}&format=json&by=position&lat=${lat}&lng=${lon}`
     )
       .then((response) => {
         return response.json()

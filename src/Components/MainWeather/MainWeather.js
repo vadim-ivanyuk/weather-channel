@@ -69,7 +69,6 @@ class MainWeather extends React.Component {
   getVideoForFon = () => {
     const { hourly } = this.props.weather
 
-    console.log(hourly[0].weather[0].icon)
     return (
       <video
         className="weather-video-fon"

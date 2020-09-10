@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
 import { weather_api, time_zone_api } from './utils/apies'
-import TopBlock from './Components/TopBlock/TopBlock'
-import MainWeather from './Components/MainWeather/MainWeather'
+import TopBlock from './components/TopBlock/TopBlock'
+import MainWeather from './components/MainWeather/MainWeather'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudSunRain } from '@fortawesome/free-solid-svg-icons'
 

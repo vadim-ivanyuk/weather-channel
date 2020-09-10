@@ -69,10 +69,15 @@ class MainWeather extends React.Component {
   getVideoForFon = () => {
     const { hourly } = this.props.weather
 
+    console.log(hourly[0].weather[0].icon)
     return (
       <video
         className="weather-video-fon"
-        src={`weather-fon/${hourly[0].weather[0].main}.mp4`}
+        src={`weather-fon/${
+          hourly[0].weather[0].icon === '01n'
+            ? 'Clear-night'
+            : hourly[0].weather[0].main
+        }.mp4`}
         autoPlay={true}
         loop={true}
       ></video>

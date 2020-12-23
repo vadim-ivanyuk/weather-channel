@@ -24,9 +24,8 @@ class App extends React.Component {
         maximumAge: 30000,
         timeout: 10000,
       },
-      favouriteLocations: JSON.parse(
-        localStorage.getItem('favouriteLocations')
-      ) || [],
+      favouriteLocations:
+        JSON.parse(localStorage.getItem('favouriteLocations')) || [],
     }
   }
 
